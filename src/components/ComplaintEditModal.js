@@ -38,7 +38,7 @@ function ComplaintEditModal({ complaint, onClose, onUpdateStatus }) {
 
   return isModalOpen ? (
     <div className="modal-overlay">
-      <div className="complaint-edit-modal">
+      <div className="admin-modal">
         <button className="close-button" onClick={closeModal}>
           &#x2716; {/* Unicode for the cross symbol */}
         </button>

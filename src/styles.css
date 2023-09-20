@@ -751,12 +751,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-right: 5px;
 }
 
-.+ vf {
-  display: inline-block;
-  font-size: 24px; /* Adjust the font size as needed */
-  color: #ccc; /* Default color for unfilled stars */
-}
-
 .star-icon.filled {
   color: gold; /* Color for filled stars */
 }

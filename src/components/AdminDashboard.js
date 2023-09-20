@@ -229,7 +229,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ImageCarousel from '../components/Carousel';
 import AddPlanForm from '../components/AddPlanForm';
-import { useAuth } from '../utils/AuthContext';
 import PlansEdit from '../components/PlanManager';
 import ComplaintEdit from '../components/ComplaintManager';
 
@@ -237,7 +236,6 @@ function AdminDashboard({ logoutAdmin }) {
   const [sessionStartTime, setSessionStartTime] = useState(null);
   const [counter, setCounter] = useState('00:00');
   const [userLocation, setUserLocation] = useState(null); // State to store user's location
-  const { user } = useAuth();
 
   useEffect(() => {
     const fetchSessionStartTime = async () => {
@@ -345,7 +343,7 @@ function AdminDashboard({ logoutAdmin }) {
   return (
     <div>
       <div className="admin-heading">
-        <h1>Hello {user.name}</h1>
+        <h1>Hello Admin</h1>
 
           <p>Session Start Time: {sessionStartTime ? sessionStartTime.toLocaleTimeString() : 'Not Started'}</p>
           <p>Session Duration: {counter}</p>

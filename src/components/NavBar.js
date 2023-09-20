@@ -31,19 +31,24 @@ function NavBar() {
                 Profile
               </Link>
             </li>
-            <li>
-              <Link to="/admin" className="nav-link">
-                Admin
-              </Link>
-            </li>
+            
             <li onClick={logoutUser} className="nav-link">
               Logout
             </li>
           </>
         ) : (
-          <li className="nav-link" to="/login">
-            Login
-          </li>
+          <>
+          <li>
+              <Link to="/login" className="nav-link">
+                Login
+              </Link>
+            </li>
+          <li>
+              <Link to="/admin" className="nav-link">
+                Admin
+              </Link>
+            </li>
+          </>
         )}
       </ul>
     </div>
