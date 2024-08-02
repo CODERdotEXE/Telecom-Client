@@ -1,4 +1,4 @@
-![Repo Banner](assets/evolv%20banner.png)
+![Repo Banner](readmeban/evolv%20banner.png)
 
 # Telecom Services Application [Internship Project]
 
