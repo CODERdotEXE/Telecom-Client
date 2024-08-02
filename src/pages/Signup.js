@@ -50,6 +50,7 @@ const Register = () => {
       setRegistrationStatus('success'); // Registration was successful
     } catch (error) {
       console.error('Error registering user:', error);
+      alert('Error registering user')
       setRegistrationStatus('error'); // Registration failed
     }
   };
